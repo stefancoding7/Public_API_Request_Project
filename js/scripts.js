@@ -91,8 +91,7 @@ function searchUsers(){
         let firstName = datas.name.first.toLowerCase();
         let lastName = datas.name.last.toLowerCase();
         if(firstName.includes(user) || lastName.includes(user)) {
-            const card = document.querySelectorAll('.card');
-            card.style.display = 'none';
+           
             findedUser.push(datas)
         }
         if(user === '') {
