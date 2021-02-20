@@ -2,6 +2,8 @@ const dom = {
     body: document.getElementsByTagName('body'),
     searchContainer: document.querySelector('.search-container'),
     gallery: document.querySelector('#gallery'),
+    
+
 
     createElement(el, classname, text) {
         const element = document.createElement(el);
@@ -44,7 +46,31 @@ const dom = {
         element.src = `${src}`;
         element.alt = alt;
         return element;
-    }
+    },
+
+    createButton(type, id, classname, textcontent){
+        const element = document.createElement('button');
+        element.type = type;
+        element.id = id,
+        element.className = classname;
+        element.textContent = textcontent;
+
+        return element;
+    },
+
+    addSearchInput() {
+        
+
+        let element = `<form action="#" method="get">
+        <input type="search" id="search-input" class="search-input" placeholder="Search...">
+        <input type="submit" value="&#x1F50D;" id="search-submit" class="search-submit">
+        </form>`;
+
+        dom.searchContainer.insertAdjacentHTML('beforeend', element);
+    },
+
+    
+    
 
 }
 
