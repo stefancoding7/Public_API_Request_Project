@@ -1,5 +1,5 @@
 // randoms user JSON
-const randomUrl = 'https://randomuser.me/api/?results=12&nat=AU, BR, CA, CH, DE, DK, ES, FI, FR, GB, IE, IR, NO, NL, NZ, TR, US';
+const randomUrl = 'https://randomuser.me/api/?results=12&nat=GB,US';
 
 //add search input end get input and button and save to the variable
 dom.addSearchInput();
