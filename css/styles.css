@@ -2,7 +2,7 @@
    Public API Request
 ======================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background-image: linear-gradient(to right, #e0e0e0, #e0d9e2, #e6d1de, #efc8d2, #f6c0c0);
 }
 
 header {
@@ -37,7 +37,6 @@ header h1 {
 .search-input {
     padding: 0.4rem 1rem;
     border: 1px solid rgba(200, 200, 200, 0.9);
-    border-radius: 0.25rem 0 0 0.25rem ;
     max-width: 20rem;
     transition: .4s ease-out;
     outline: none;
@@ -51,7 +50,6 @@ header h1 {
     cursor: pointer;
     height: 33px;
     background: rgba(245, 245, 245, 0.9);
-    border-radius: 0 0.25rem 0.25rem 0;
     border: 1px solid rgba(200, 200, 200, 0.9);
     transition: .4s ease-out;
     outline: none;
@@ -88,16 +86,17 @@ header h1 {
     margin: 10px 10px 20px;
     padding: 10px;
     background: rgba(245, 245, 245, 0.9);
-    border-radius: 0.25em;
     border: 1px solid rgba(50, 50, 50, 0.3);
     transition: .4s ease-out;
     overflow: hidden;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
+    -moz-box-shadow:    3px 3px 5px 6px #ccc; 
+    box-shadow:         3px 3px 5px 6px #ccc;  
 }
 
 .card-img {
     width: 95px;
     margin: 10px 15px auto 10px;
-    border-radius: 50%;
 }
 
 .card-info-container {
@@ -141,10 +140,10 @@ header h1 {
     margin: 10px auto auto;
     padding-bottom: 15px;
     background: rgba(255, 255, 255, 1);
-    border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
     transition: .4s ease-out;
 }
+
 
 .modal-close-btn {
     position: absolute;
@@ -154,14 +153,12 @@ header h1 {
     color: rgba(255, 255, 255, 0.9);
     background: rgba(0, 0, 0, 0.8);
     outline: none;
-    border-radius: 0.25em;
     border: 1px solid rgba(50, 50, 50, 0.3);
 }
 
 .modal-img {
     width: 150px;
     margin-top: 35px;
-    border-radius: 50%;
 }
 
 .modal-name {
@@ -189,7 +186,6 @@ header h1 {
     padding: 10px 15px 15px;;
     margin: 10px auto auto;
     background: rgba(255, 255, 255, 1);
-    border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
 }
 
@@ -202,7 +198,6 @@ header h1 {
     color: rgba(255, 255, 255, 0.9);
     padding: 0.75em 1.5em;
     background: rgba(0, 0, 0, 0.8);
-    border-radius: 0.35em;
     transition: .4s ease-out;
     outline: none;
   }
