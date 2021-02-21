@@ -6,8 +6,12 @@
 <hr>
 
 <h2>Document style changes</h2>
+
+If user not found show message about it.
+
 I added linear background color and changed template style to cube style(no border-radius). 
 
 Added text shadows for every card element. 
 
 Also changed font into "roboto".
+                
